@@ -1,0 +1,104 @@
+:root {
+    --code-clr: #00463f3d;
+    --pink: #f06292;
+}
+body {
+    background-color: gray;
+}
+.container {
+    width: 100%;
+}
+
+#main {
+    width: 80%;
+    margin-left: 20rem;
+    background-color: lightgrey;
+    padding: 20px 120px;
+    margin-bottom: -20px;
+    transition: .6s;
+}
+#navbar {
+    position: fixed;
+    height: 100%;
+    width: 20%;
+    top: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px grey;
+}
+#navbar ul {
+    height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+#navbar ul li {
+    position: relative;
+    border-bottom: 2px solid var(--pink);
+}
+#navbar a {
+    display: block;
+}
+
+.logo {
+    display: flex;
+}
+section li{
+    display: flex;
+    align-items: center;
+}
+
+section li i {
+    margin: 0 20px;
+}
+.codes {
+    background-color: var(--code-clr);
+    border-radius: 5px;
+    padding: 20px;
+}
+i {
+    color: var(--pink);
+}
+h2 {
+    color: #009688;
+}
+h3 {
+    font-size: 40px;
+}
+h3 span {
+    color: var(--pink);
+}
+
+@media screen and (max-width: 700px) {
+
+    #main {
+        padding: 0 50px;
+        margin-left: 12rem;
+        margin-right: 0;
+        padding-right: 50px;
+    }
+    #navbar {
+        width: 200px;
+    }
+    
+}
+@media screen and (max-width: 1500px) {
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#buton {
+    position: fixed;
+    bottom: 50px;
+    left: 40px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+#buton:active {
+    transform: scale(.98);
+}
