@@ -23,7 +23,7 @@ body {
     width: 20%;
     top: 10px;
     border-radius: 5px;
-    box-shadow: 5px 5px 10px grey;
+    box-shadow: 5px 5px 8px rgb(54, 54, 54);
 }
 #navbar ul {
     height: 80%;

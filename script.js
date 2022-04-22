@@ -4,6 +4,9 @@ element.addEventListener('click', funcOne);
 
 let ground = document.getElementById('main');
 
+ground.style.backgroundColor = "lightgrey";
+ground.style.color = "black";
+
 function funcOne(e) {
     e.preventDefault();
     if (ground.style.backgroundColor == "lightgrey") {
