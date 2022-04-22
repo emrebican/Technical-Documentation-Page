@@ -71,6 +71,41 @@ h3 span {
     color: var(--pink);
 }
 
+#buton {
+    position: fixed;
+    bottom: 50px;
+    left: 40px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    transition: ease .5s;
+}
+#buton:active {
+    transform: scale(.98);
+}
+
+
+@media screen and (max-width: 1500px) {
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+    #navbar {
+        width: 300px;
+        transition: ease .5s;
+    }
+    #buton {
+        position: fixed;
+        top: 50px;
+        left: 180px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        z-index: 100;
+        transition: ease .5s;
+    }
+}
 @media screen and (max-width: 700px) {
 
     #main {
@@ -82,23 +117,15 @@ h3 span {
     #navbar {
         width: 200px;
     }
-    
-}
-@media screen and (max-width: 1500px) {
-    .logo {
-        display: flex;
-        flex-direction: column;
+    #buton {
+        position: fixed;
+        top: 50px;
+        left: 100px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        z-index: 100;
+        transition: ease .5s;
     }
-}
-
-#buton {
-    position: fixed;
-    bottom: 50px;
-    left: 40px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-}
-#buton:active {
-    transform: scale(.98);
+    
 }
